@@ -1,0 +1,352 @@
+@import 'flavors/mini-dark';
+@import 'flavors/mini-default';
+
+$screen-mobile-vertical: 480px;
+$large-screen-table: 992px;
+$small-screen-table: 600px;
+$screen-small-desktop:1199px;
+
+body{
+	background-color: #8c9ab4;
+	font-size: 15px;
+}
+
+@-webkit-keyframes flip-scale-down-show {
+  0% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes flip-scale-down-show {
+  0% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes flip-scale-down-hide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes flip-scale-down-hide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+.sales-wrap.hide-subscriber-popup{
+	-webkit-animation: flip-scale-down-hide 0.5s linear both;
+	        animation: flip-scale-down-hide 0.5s linear both;
+}
+.sales-wrap{
+	min-height: 667px;
+	width:100%;
+	max-width: 1195px;
+    margin:8% auto;
+    border-radius: 24px;
+    background: url('../images/bg-sales-popup.png') top left no-repeat;
+    position: relative;
+    z-index: 1;
+    overflow: unset;
+   -webkit-animation: flip-scale-down-show 0.5s linear both;
+	        animation: flip-scale-down-show 0.5s linear both;
+	
+	.sales-content{
+		border-radius: 24px;
+		.card-content{
+			background-color: transparent;
+			border: none;
+			margin: 0px;
+			position: relative;
+			.modal-close{
+				    border-radius: 50%;
+				    background-color: #f8f8f8;
+				    position: absolute;
+				    right: -14px;
+				    top: -66px;
+				    width: 66px;
+				    height: 66px;
+				    padding: 0px;
+				    color: #000000;
+				    font-size: 31px;
+				    text-align: center;
+				    font-family: 'Open Sans', sans-serif;
+				    font-weight: bold;
+				    line-height: 2;
+				  i{
+				  	line-height: 3.3;
+				  }
+				&:hover{
+					cursor: pointer;
+				}  
+			}
+			.title{
+              font-family: 'PlayfairDisplay-BlackItalic', serif;
+               font-size: 69px;
+              font-style: italic;
+              color: rgb(7, 7, 7);
+              text-align: left;
+              font-weight: 900;
+              letter-spacing: -2.1px;
+              line-height: 1;
+              margin-top: 125px;
+    		  margin-left: -56px;
+			}
+			.sub-title{
+				font-family: 'PlayfairDisplay-Regular', serif;
+				font-size: 41.41px;
+				font-weight: 400;
+				color: rgb(7, 7, 7);
+				line-height: 1.096;
+				letter-spacing: -0.414px;
+			    margin-top: 34px;
+    			margin-left: 22px;
+			}
+			.sales-percent{
+		   	    font-family: "PlayfairDisplay-Black", serif;
+   			    font-size: 296.6px;
+   			    font-weight: 900;
+   			    color: white;
+   			    line-height: 1.1;
+   			    text-align: left;
+   			    letter-spacing: -13px;
+   			    background: url('../images/fill-popup.jpg') top left no-repeat;
+   		        background-position-x: -104px;
+       			background-position-y: 45px;
+   			    -webkit-background-clip: text;
+   			    -webkit-text-fill-color: transparent;
+   			    -webkit-text-stroke-width: 4px;
+   			    -webkit-text-stroke-color: white;
+   		        position: relative;
+   			    top: -123px;
+   			    left: 17px;
+   			   span{
+   			   	 font-family: 'PlayfairDisplay-Black', serif;
+   			   	 font-weight:900;
+   			   	 font-size: 78.81px;
+                 margin-left: 3px;
+   			   } 
+			}
+			.btn-salse{
+			  font-size: 17.63px;
+			  font-family: 'OpenSans-Bold', sans-serif;
+			  color: rgb(32, 32, 32);
+			  font-weight: bold;
+			  display: block;
+			  text-align: center;
+			  line-height: 3.2;
+			  background-color: #fff;
+			  border-radius: 31px;
+			  background-image: -moz-linear-gradient( 39deg, rgb(252,211,0) 0%, rgb(253,166,0) 50%, rgb(255,122,0) 100%);
+			  background-image: -webkit-linear-gradient( 39deg, rgb(252,211,0) 0%, rgb(253,166,0) 50%, rgb(255,122,0) 100%);
+			  background-image: -ms-linear-gradient( 39deg, rgb(252,211,0) 0%, rgb(253,166,0) 50%, rgb(255,122,0) 100%);
+			  box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.17);
+			  width: 182px;
+			  height: 58px;
+			  border:2px solid transparent;
+			  transition: all 500ms ease-out 0s;
+			  float: right;
+			  overflow: hidden;
+			  margin-top: -103px;
+			  margin-right: 52px;
+			  &:hover{
+				text-decoration: none;
+				background-color: transparent;
+				border-color: #fff;
+			  }
+			}
+		}
+	}
+}
+@media only screen and (min-width: $card-normal-width){
+	.sales-wrap{
+	   background: url('../images/sale-popup-mobile.png') top right no-repeat;
+       background-size: cover;
+       min-height: 567px; 
+       .sales-content{
+       	   .card-content{
+       	   	   .modal-close{
+   	   	   	      right: -14px;
+    			  top: -114px;
+       	   	   }
+       	   	   .title{
+				  font-size: 40px;
+				  text-align: center;
+			      margin-left: auto;
+		          margin-top: 95px;
+       	   	   }
+       	   	   .sub-title{
+   	   	   	      font-size: 30px;
+    			  text-align: center;
+       	   	   }
+       	   	   .sales-percent{
+       	   	   	  font-size: 176px;
+			      top: -70px;
+			      left: auto;
+			      text-align: center;
+			      span{
+			      	 font-size: 60px;
+                     margin-left: 13px;
+			      }
+       	   	   }
+       	   	   .btn-salse{
+   	   	   	      margin: auto;
+   	   	   	      float: none;
+   	   	   	      text-decoration: none;
+       	   	   }
+       	   }
+       }
+	}
+}
+
+@media only screen and (min-width: $screen-mobile-vertical){
+	.sales-wrap{
+	   background: url('../images/sale-popup-mobile.png') top right no-repeat;
+       background-size: cover; 
+       .sales-content{
+       	   .card-content{
+       	   	   .modal-close{
+   	   	          top: -119px;  
+       	   	   }
+       	   	}
+       	}
+    }
+}
+
+@media only screen and (min-width: $mobile-breakpoint){
+    .sales-wrap{
+	   background: url('../images/bg-sales-popup.png') top left no-repeat; 
+	   background-size: auto;
+       min-height: 667px;
+	   .sales-content{
+	   	   max-width: 100%;
+    	   flex-basis: 100%;
+    	   .card-content{
+       	   	   .modal-close{
+   	   	          top: -133px;  
+       	   	   }
+       	   	   .title{
+   	   	   	     font-size: 50px; 
+       	   	   }
+       	   	   .sales-percent{
+   	              background-position-x: -9px;
+                  font-size: 200px;
+       	   	   }
+       	   	}
+	   }
+	}
+}
+
+@media only screen and (min-width: $large-screen-table){
+	.sales-wrap{
+		background-size: contain;
+		.col-md-7{
+			max-width: 50%;
+    		flex-basis: 50%;
+		}
+		.sales-content{
+			max-width: 50%;
+    		flex-basis: 50%;
+    		.card-content{
+    			.modal-close{
+    				top: -53px;
+    				right: 0px;
+    			}
+    			.title{
+				    font-size: 63px;
+				    text-align: left;
+				    margin-top: 90px;
+    			}
+    			.sub-title{
+    				text-align: left;
+    			}
+				.sales-percent{
+	    			text-align: left;
+	    			left: 25px;
+	    		}
+	    		.btn-salse{
+	    			float: right;
+				    margin-top: -57px;
+				    margin-right: 52px; 
+	    		}
+    		}
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-small-desktop){
+	.sales-wrap{
+		background-size: auto;
+		.col-md-7{
+		    max-width: 58.3333333333%;
+    		flex-basis: 58.3333333333%;
+		}
+		.sales-content{
+		    max-width: 41.6666666667%;
+            flex-basis: 41.6666666667%;
+    		.card-content{
+    			.modal-close{
+				    right: -14px;
+    				top: -66px;
+    			}
+    			.title{
+				    font-size: 69px;
+				    margin-top: 125px;
+					margin-left: -56px;
+    			}
+    			.sub-title{
+    				font-size: 41.41px;
+    			}
+				.sales-percent{
+	    			font-size: 296.6px;
+	    			top: -123px;
+    				left: 17px;
+    				background-position-x: -104px;
+    				span{
+    					font-size: 78.81px;
+    					margin-left: 3px;
+    				}
+	    		}
+	    		.btn-salse{
+	    			margin-top: -105px;
+    				margin-right: 52px; 
+	    		}
+    		}
+		}
+	}
+}
